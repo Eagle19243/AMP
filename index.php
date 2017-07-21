@@ -28,11 +28,11 @@
             <img id="start" src="public/img/start.png"/>
         </div>
         <div id="intro_video">
-            <video controls="true" poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" src="public/vids/river.mp4" type="video/mp4">
+            <video controls="true"poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline>
                 <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-                <!-- <source src="public/vids/river.mp4" type="video/mp4">
+                <source src="public/vids/river.mp4" type="video/mp4">
                 <source src="public/vids/river.ogv" type="video/ogv">
-                <source src="public/vids/river.webm" type="video/webm"> -->
+                <source src="public/vids/river.webm" type="video/webm">
             </video>
             <img id="skip" src="public/img/skip.png"/>
         </div>
