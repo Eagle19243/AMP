@@ -97,14 +97,12 @@
                         </div>
                         <img src="https://unsplash.it/1400/600?image=315" class= "item-img"/>
                         <div class="item-description">
-                            <div class="item-description">
-                                <p>
-                                    Sarah Nahm cofounded <a href="https://www.lever.co" target="_blank">Lever </a>five years ago to rethink recruiting for the digital age. The San Francisco-based recruiting software company helps its customers not only track resumes, but also identify and cultivate people who might not be actively job-hunting.
-                                </p>
-                                <p>
-                                    As the recruiting space becomes increasingly competitive, Lever has amassed&nbsp;a significant war chest. Today, it said that it had raised an additional $30 million in venture financing from Adams Street Partners, Matrix Partners and Scale Partners, bringing its total funding to $62 million. It could raise as much as $10 million more before officially closing the round. That gives Lever, which FORBES estimates has revenues above $20 million, the cash to do more R&amp;D and to add new analytical functions to its software to meet the needs of highly complex, global corporations. Lever’s more than 1,300 customers include Netflix, KPMG, <a href="https://www.forbes.com/sites/alexkonrad/2016/01/26/lever-raises-20-million-to-help-lyft-hire/#230673975fa4" target="_self">Lyft </a>and Cirque du Soleil. “We’ve tried to rethink what has been a stale category,” Nahm says.
-                                </p>
-                            </div>
+                            <p>
+                                Sarah Nahm cofounded <a href="https://www.lever.co" target="_blank">Lever </a>five years ago to rethink recruiting for the digital age. The San Francisco-based recruiting software company helps its customers not only track resumes, but also identify and cultivate people who might not be actively job-hunting.
+                            </p>
+                            <p>
+                                As the recruiting space becomes increasingly competitive, Lever has amassed&nbsp;a significant war chest. Today, it said that it had raised an additional $30 million in venture financing from Adams Street Partners, Matrix Partners and Scale Partners, bringing its total funding to $62 million. It could raise as much as $10 million more before officially closing the round. That gives Lever, which FORBES estimates has revenues above $20 million, the cash to do more R&amp;D and to add new analytical functions to its software to meet the needs of highly complex, global corporations. Lever’s more than 1,300 customers include Netflix, KPMG, <a href="https://www.forbes.com/sites/alexkonrad/2016/01/26/lever-raises-20-million-to-help-lyft-hire/#230673975fa4" target="_self">Lyft </a>and Cirque du Soleil. “We’ve tried to rethink what has been a stale category,” Nahm says.
+                            </p>
                         </div>
                     </div>
                 </div>
