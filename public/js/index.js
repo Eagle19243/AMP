@@ -219,11 +219,4 @@ $(document).ready(function(){
             ]
         },
     };
-
-    $("#main").show();
-    $(".preview-img").css("height", $(".slider-nav").css("height"));
-    $(".preview-img").css("width", $(".slider-nav").css("width"));
-    $(".detail-container").css("height", $(".slider-nav").css("height"));
-    $(".detail-container").css("width", $(".slider-nav").css("width"));
-    $("#main").hide();
 });
