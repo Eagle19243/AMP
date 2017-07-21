@@ -7,11 +7,11 @@
         
         <link rel="stylesheet" type="text/css" href="public/vendor/slick/slick.css">
         <link rel="stylesheet" type="text/css" href="public/vendor/slick/slick-theme.css"/>
-        <link rel="stylesheet" type="text/css" href="public/css/style.min.css">
+        <link rel="stylesheet" type="text/css" href="public/css/style.css">
         
         <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="public/vendor/slick/slick.min.js"></script>
-        <script type="text/javascript" src="public/js/index.min.js"></script>
+        <script type="text/javascript" src="public/js/index.js"></script>
 
         <script type="text/javascript" src="public/js/jquery.event.move.js"></script>
         <script type="text/javascript" src="public/js/jquery.event.swipe.js"></script>
