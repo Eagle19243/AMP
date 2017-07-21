@@ -9,7 +9,7 @@
         <link rel="stylesheet" type="text/css" href="public/vendor/slick/slick-theme.css"/>
         <link rel="stylesheet" type="text/css" href="public/css/style.min.css">
         
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="public/vendor/slick/slick.min.js"></script>
         <script type="text/javascript" src="public/js/index.min.js"></script>
 
