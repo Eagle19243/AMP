@@ -48,6 +48,10 @@
                 right: 20px;
                 outline: none;
             }
+            amp-lightbox.intro_normal {
+                opacity: 1;
+                z-index: 1002;
+            }
             amp-lightbox.intro_overall {
                 opacity: 0;
                 z-index: -1;
@@ -335,6 +339,7 @@
         </amp-img>
         <amp-lightbox
             id="video-lightbox"
+            class="intro_normal"
             [class]="[intro_lightbox_class]"
             layout="nodisplay">
             <amp-img
@@ -358,6 +363,7 @@
         </amp-lightbox>
         <amp-lightbox
             id="main-lightbox"
+            class="main_normal"
             [class]="[main_lightbox_class]"
             layout="nodisplay">
             <div class="carousel_lightbox_content">
@@ -432,6 +438,7 @@
         </amp-lightbox>
         <amp-lightbox
             id="detail-lightbox"
+            class="detail_normal"
             [class]="[detail_lightbox_class]"
             layout="nodisplay">
             <div class="detail_lightbox_content">
@@ -555,6 +562,7 @@
         </amp-lightbox>
         <amp-lightbox
             id="chat-lightbox"
+            class="chat_normal"
             [class]="[chat_lightbox_class]"
             layout="nodisplay">
             <div class="chat_lightbox_content">
