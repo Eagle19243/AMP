@@ -50,7 +50,7 @@
             }
             amp-lightbox.intro_normal {
                 opacity: 1;
-                z-index: 1002;
+                z-index: 1003;
             }
             amp-lightbox.intro_overall {
                 opacity: 0;
@@ -63,11 +63,6 @@
                 z-index: -1;
                 animation-name: intro_skip-fadeout;
                 animation-duration: 1s;
-            }
-            amp-lightbox.main_start {
-                opacity: 1;
-                animation-name: main-fadein;
-                animation-duration: 10s;
             }
             amp-lightbox.main_normal {
                 opacity: 1;
@@ -83,21 +78,9 @@
                 animation-name: main-slidedown;
                 animation-duration: 0.5s;
             }
-            amp-lightbox.detail_start {
-                opacity: 1;
-                z-index: 999;
-                animation-name: detail-fadein;
-                animation-duration: 10s;
-            }
             amp-lightbox.detail_normal {
                 opacity: 1;
                 z-index: 999;
-            }
-            amp-lightbox.chat_start {
-                opacity: 1;
-                z-index: 997;
-                animation-name: chat-fadein;
-                animation-duration: 10s;
             }
             amp-lightbox.chat_normal {
                 opacity: 1;
@@ -112,6 +95,22 @@
                 z-index: 997;
                 animation-name: chat-slideright;
                 animation-duration: 0.5s;
+            }
+            amp-lightbox.cover_normal {
+                opacity: 1;
+                z-index: 1002;
+            }
+            amp-lightbox.cover_overall {
+                opacity: 0;
+                z-index: -1000;
+                animation-name: cover-fadeinout;
+                animation-duration: 10s;
+            }
+            amp-lightbox.cover_skip_end {
+                opacity: 0;
+                z-index: -1000;
+                animation-name: cover_skip-fadeout;
+                animation-duration: 1s;
             }
             div.video_lightbox_content {
                 background: rgba(0,0,0,1);
@@ -139,6 +138,11 @@
                 overflow-y: auto;
                 height: 100%;
                 width: 100%;
+            }
+            div.cover_lightbox_content {
+                background: rgba(0,0,0,1);
+                width: 100%;
+                height: 100%;
             }
             #intro_video video {
                 width: auto;
@@ -190,6 +194,42 @@
             @keyframes intro-fadeinout {
                 0% {
                     opacity: 0;
+                    z-index: 1003;
+                }
+                10% {
+                    opacity: 1;
+                    z-index: 1003;
+                }
+                90% {
+                    opacity: 1;
+                    z-index: 1003;
+                }
+                99% {
+                    opacity: 0;
+                    z-index: 1003;
+                }
+                100% {
+                    opacity: 0;
+                    z-index: -1;
+                }
+            }
+            @keyframes intro_skip-fadeout {
+                0% {
+                    opacity: 1;
+                    z-index: 1003;
+                }
+                99% {
+                    opacity: 0;
+                    z-index: 1003;
+                }
+                100% {
+                    opacity: 0;
+                    z-index: -1;
+                }
+            }
+            @keyframes cover-fadeinout {
+                0% {
+                    opacity: 1;
                     z-index: 1002;
                 }
                 10% {
@@ -209,49 +249,7 @@
                     z-index: -1;
                 }
             }
-            @keyframes main-fadein {
-                0% {
-                    opacity: 0;
-                }
-                50% {
-                    opacity: 0;
-                }
-                60% {
-                    opacity: 1;
-                }
-                100% {
-                    opacity: 1;
-                }
-            }
-            @keyframes detail-fadein {
-                0% {
-                    opacity: 0;
-                }
-                60% {
-                    opacity: 0;
-                }
-                70% {
-                    opacity: 1;
-                }
-                100% {
-                    opacity: 1;
-                }
-            }
-            @keyframes chat-fadein {
-                0% {
-                    opacity: 0;
-                }
-                70% {
-                    opacity: 0;
-                }
-                80% {
-                    opacity: 1;
-                }
-                100% {
-                    opacity: 1;
-                }
-            }
-            @keyframes intro_skip-fadeout {
+            @keyframes cover_skip-fadeout {
                 0% {
                     opacity: 1;
                     z-index: 1002;
@@ -335,7 +333,7 @@
             layout="fixed"
             role="button"
             tabindex="0"
-            on="tap:AMP.setState({start_img_class:'start_end', intro_lightbox_class:'intro_overall', main_lightbox_class:'main_start', detail_lightbox_class:'detail_start', chat_lightbox_class:'chat_start'}), video-lightbox, main-lightbox, detail-lightbox, chat-lightbox, intro_video.play">
+            on="tap:AMP.setState({start_img_class:'start_end', intro_lightbox_class:'intro_overall', main_lightbox_class:'main_normal', detail_lightbox_class:'detail_normal', chat_lightbox_class:'chat_normal', cover_lightbox_class:'cover_overall'}), video-lightbox, main-lightbox, detail-lightbox, chat-lightbox, cover-lightbox, intro_video.play">
         </amp-img>
         <amp-lightbox
             id="video-lightbox"
@@ -350,7 +348,7 @@
                 layout="fixed"
                 role="button"
             	tabindex="0"
-                on="tap:AMP.setState({intro_lightbox_class:'intro_skip_end', main_lightbox_class:'main_normal', detail_lightbox_class:'detail_normal', chat_lightbox_class:'chat_normal'})">
+                on="tap:AMP.setState({intro_lightbox_class:'intro_skip_end', cover_lightbox_class:'cover_skip_end'})">
             </amp-img>
             <div class="video_lightbox_content">
                 <amp-video autoplay
@@ -582,6 +580,14 @@
                     role="button"
                     on="tap:AMP.setState({chat_lightbox_class:'chat_slideright'})">
                 </amp-img>
+            </div>
+        </amp-lightbox>
+        <amp-lightbox
+            id="cover-lightbox"
+            class="cover_normal"
+            [class]="[cover_lightbox_class]"
+            layout="nodisplay">
+            <div class="cover_lightbox_content">
             </div>
         </amp-lightbox>
     </body>
