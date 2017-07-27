@@ -48,6 +48,10 @@
                 right: 20px;
                 outline: none;
             }
+            amp-lightbox.intro_preload {
+                opacity: 1;
+                z-index: 1002;
+            }
             amp-lightbox.intro_normal {
                 opacity: 1;
                 z-index: 1002;
@@ -63,6 +67,10 @@
                 z-index: -1;
                 animation-name: intro_skip-fadeout;
                 animation-duration: 1s;
+            }
+            amp-lightbox.main_preload {
+                opacity: 0;
+                z-index: 1000;
             }
             amp-lightbox.main_start {
                 opacity: 1;
@@ -83,6 +91,10 @@
                 animation-name: main-slidedown;
                 animation-duration: 0.5s;
             }
+            amp-lightbox.detail_preload {
+                opacity: 0;
+                z-index: 999;
+            }
             amp-lightbox.detail_start {
                 opacity: 1;
                 z-index: 999;
@@ -92,6 +104,10 @@
             amp-lightbox.detail_normal {
                 opacity: 1;
                 z-index: 999;
+            }
+            amp-lightbox.chat_preload {
+                opacity: 0;
+                z-index: 997;
             }
             amp-lightbox.chat_start {
                 opacity: 1;
@@ -339,7 +355,7 @@
         </amp-img>
         <amp-lightbox
             id="video-lightbox"
-            class="intro_normal"
+            class="intro_preload"
             [class]="[intro_lightbox_class]"
             layout="nodisplay">
             <amp-img
@@ -363,7 +379,7 @@
         </amp-lightbox>
         <amp-lightbox
             id="main-lightbox"
-            class="main_normal"
+            class="main_preload"
             [class]="[main_lightbox_class]"
             layout="nodisplay">
             <div class="carousel_lightbox_content">
@@ -438,7 +454,7 @@
         </amp-lightbox>
         <amp-lightbox
             id="detail-lightbox"
-            class="detail_normal"
+            class="detail_preload"
             [class]="[detail_lightbox_class]"
             layout="nodisplay">
             <div class="detail_lightbox_content">
@@ -562,7 +578,7 @@
         </amp-lightbox>
         <amp-lightbox
             id="chat-lightbox"
-            class="chat_normal"
+            class="chat_preload"
             [class]="[chat_lightbox_class]"
             layout="nodisplay">
             <div class="chat_lightbox_content">
