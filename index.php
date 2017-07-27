@@ -114,13 +114,13 @@
                 animation-duration: 0.5s;
             }
             div.video_lightbox_content {
-                background: rgba(0,0,0,0.8);
+                background: rgba(0,0,0,1);
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
             div.carousel_lightbox_content {
-                background: rgba(0,0,0,0.8);
+                background: rgba(0,0,0,1);
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
