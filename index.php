@@ -186,19 +186,19 @@
             @keyframes intro-fadeinout {
                 0% {
                     opacity: 0;
-                    z-index: 1001;
+                    z-index: 1002;
                 }
                 10% {
                     opacity: 1;
-                    z-index: 1001;
+                    z-index: 1002;
                 }
                 90% {
                     opacity: 1;
-                    z-index: 1001;
+                    z-index: 1002;
                 }
                 99% {
                     opacity: 0;
-                    z-index: 1001;
+                    z-index: 1002;
                 }
                 100% {
                     opacity: 0;
