@@ -56,7 +56,7 @@
                 opacity: 0;
                 z-index: -1;
                 animation-name: intro-fadeinout;
-                animation-duration: 10s;
+                animation-duration: 15s;
             }
             amp-lightbox.intro_skip_end {
                 opacity: 0;
@@ -104,7 +104,7 @@
                 opacity: 0;
                 z-index: -1000;
                 animation-name: cover-fadeinout;
-                animation-duration: 10s;
+                animation-duration: 15s;
             }
             amp-lightbox.cover_skip_end {
                 opacity: 0;
@@ -333,7 +333,7 @@
             layout="fixed"
             role="button"
             tabindex="0"
-            on="tap:AMP.setState({start_img_class:'start_end', intro_lightbox_class:'intro_overall', main_lightbox_class:'main_normal', detail_lightbox_class:'detail_normal', chat_lightbox_class:'chat_normal', cover_lightbox_class:'cover_overall'}), video-lightbox, main-lightbox, detail-lightbox, chat-lightbox, cover-lightbox, intro_video.play">
+            on="tap:AMP.setState({start_img_class:'start_end', intro_lightbox_class:'intro_overall', main_lightbox_class:'main_normal', detail_lightbox_class:'detail_normal', chat_lightbox_class:'chat_normal', cover_lightbox_class:'cover_overall'}), cover-lightbox, video-lightbox, main-lightbox, detail-lightbox, chat-lightbox, intro_video.play">
         </amp-img>
         <amp-lightbox
             id="video-lightbox"
