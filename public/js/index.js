@@ -39,6 +39,15 @@ $(window).resize(function() {
     setPhotoHeight();
 });
 
+$(window).on("orientationChange", function(event) {
+     $('.parent_slick').slick('slickNext');
+     $('.parent_slick').slick('slickPrev');
+     $('.gallery_slick').slick('slickNext');
+     $('.gallery_slick').slick('slickPrev');
+     $('.article_slick').slick('slickNext');
+     $('.article_slick').slick('slickPrev');
+});
+
 function setPhotoHeight () {
     windowHeight = $(window).innerHeight();
     $('.gallery_photo').css('height', windowHeight);
