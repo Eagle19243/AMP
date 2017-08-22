@@ -17,14 +17,17 @@ $(document).ready(function(){
         $('.article_slick').slick('slickGoTo', 2, true);
     });
     $('.parent_slick').slick({
-        infinite: false
+        infinite: false,
+        mobileFirst: true
     });
     $('.gallery_slick').slick({
+        mobileFirst: true,
         vertical: true,
         verticalSwiping: true,
         lazyLoad: 'ondemand'
     });
     $('.article_slick').slick({
+        mobileFirst: true,
         vertical: true,
         verticalSwiping: true,
         lazyLoad: 'ondemand'
