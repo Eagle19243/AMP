@@ -9,6 +9,7 @@ html, body {
     bottom: 0;
     left: 100%;
     right: -100%;
+    background-color: white;
     -webkit-transition: left 0.3s,right 0.3s;
     transition: left 0.3s,right 0.3s;
     -webkit-transition-timing-function: ease;
