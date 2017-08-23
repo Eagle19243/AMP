@@ -9,6 +9,11 @@
         <link rel="stylesheet" type="text/css" href="public/css/style.css"/>
     </head>
     <body>
+        <div class="chatscreen">
+            <img id="back" class="back_button" src="public/img/back.png">
+            <iframe class="chatbox" src="https://chat-interface.herokuapp.com/?theme=bridgestone&channelID=76a21dc9-256e-4bc7-a911-1906360178df&text=start_contobox_new&theme_ext=https://cbmedia3.s3.amazonaws.com/cbox_themes_v3/bridgestone_chatbot_q2_2017/styles/expansion/com-htmlbox-mobile.css">
+            </iframe>
+        </div>
         <div class="topbar" align="center">
             <div class="left_panel" align="center">
                 <img class="logo" src="public/img/logo.png">
@@ -19,9 +24,9 @@
                 </a>
             </div>
             <div class="right_panel" align="center">
-                <img class="chat" src="public/img/chat.png">
-                <img class="heart" src="public/img/heart.png">
-                <img class="share" src="public/img/share.png">
+                <img id="chat" class="chat_button" src="public/img/chat.png">
+                <img id="heart" class="heart_button" src="public/img/heart.png">
+                <img id="share" class="share_button" src="public/img/share.png">
             </div>
         </div>
         <div class="parent_slick">

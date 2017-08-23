@@ -1,18 +1,26 @@
 $(document).ready(function(){
     var vid = document.getElementById("intro");
-    $("#video_play").click(function(){
+    $('#chat').click(function(){
+        $('.chatscreen').css('left', 0);
+        $('.chatscreen').css('right', 0);
+    });
+    $('#back').click(function(){
+        $('.chatscreen').css('left', '100%');
+        $('.chatscreen').css('right', '-100%');
+    });
+    $('#video_play').click(function(){
         $("#video_play").hide();
         vid.play();
     });
-    $("#article_1").click(function(){
+    $('#article_1').click(function(){
         $('.parent_slick').slick('slickNext');
         $('.article_slick').slick('slickGoTo', 0, true);
     });
-    $("#article_2").click(function(){
+    $('#article_2').click(function(){
         $('.parent_slick').slick('slickNext');
         $('.article_slick').slick('slickGoTo', 1, true);
     });
-    $("#article_3").click(function(){
+    $('#article_3').click(function(){
         $('.parent_slick').slick('slickNext');
         $('.article_slick').slick('slickGoTo', 2, true);
     });
