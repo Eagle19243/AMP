@@ -1,8 +1,21 @@
 $(document).ready(function(){
     var vid = document.getElementById("intro");
+    var iframes = $('iframe');
+    var isChatFirstLoad = true;
+
+    iframes.each(function() {
+        var src = $(this).attr('src');
+        $(this).data('src', src).attr('src', '');
+    });
     $('#chat').click(function(){
         $('.chatscreen').css('left', 0);
         $('.chatscreen').css('right', 0);
+        if (isChatFirstLoad) {
+            iframes.attr('src', function() {
+                return $(this).data('src');
+            });
+            isChatFirstLoad = false;
+        }
     });
     $('#back').click(function(){
         $('.chatscreen').css('left', '100%');
