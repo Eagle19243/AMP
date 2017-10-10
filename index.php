@@ -35,9 +35,9 @@
                     <div id="video_play" class="play-icon" role="button" tabindex="0">
                     </div>
                     <video id="intro" class="intro_video" poster="public/img/video_poster.jpg" playsinline>
-                        <source src="public/vids/river.mp4" type="video/mp4">
-                        <source src="public/vids/river.ogv" type="video/ogv">
-                        <source src="public/vids/river.webm" type="video/webm">
+                        <source src="public/vids/video.mp4" type="video/mp4">
+                        <source src="public/vids/video.ogv" type="video/ogv">
+                        <source src="public/vids/video.webm" type="video/webm">
                     </video>
                 </div>
             </div>
