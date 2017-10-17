@@ -1,8 +1,16 @@
 $(document).ready(function(){
     var vid = document.getElementById("intro");
+    var vid_source_mp4 = document.getElementById("video_source_mp4");
+    var vid_source_webm = document.getElementById("video_source_webm");
     var iframes = $('iframe');
     var isChatFirstLoad = true;
 
+    vid.onended = function(){
+        $("#video_play").show();
+        vid_source_mp4.setAttribute('src', 'public/vids/video_2.mp4');
+        vid_source_webm.setAttribute('src', 'public/vids/video_2.webm');
+        vid.load();
+    }
     iframes.each(function() {
         var src = $(this).attr('src');
         $(this).data('src', src).attr('src', '');

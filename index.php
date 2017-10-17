@@ -35,9 +35,8 @@
                     <div id="video_play" class="play-icon" role="button" tabindex="0">
                     </div>
                     <video id="intro" class="intro_video" poster="public/img/video_poster.jpg" playsinline>
-                        <source src="public/vids/video.mp4" type="video/mp4">
-                        <source src="public/vids/video.ogv" type="video/ogv">
-                        <source src="public/vids/video.webm" type="video/webm">
+                        <source id="video_source_mp4" src="public/vids/video_1.mp4" type="video/mp4">
+                        <source id="video_source_webm" src="public/vids/video_1.webm" type="video/webm">
                     </video>
                 </div>
             </div>
@@ -46,17 +45,17 @@
                     <div class="gallery_slick">
                         <div class="photo_view">
                             <div class="photo_view_content">
-                                <img class="gallery_photo" src="public/img/gallery_photo-1.jpg">
+                                <img class="gallery_photo" data-lazy="public/img/gallery_photo-1.jpg">
                             </div>
                         </div>
                         <div class="photo_view">
                             <div class="photo_view_content">
-                                <img class="gallery_photo" src="public/img/gallery_photo-2.jpg">
+                                <img class="gallery_photo" data-lazy="public/img/gallery_photo-2.jpg">
                             </div>
                         </div>
                         <div class="photo_view">
                             <div class="photo_view_content">
-                                <img class="gallery_photo" src="public/img/gallery_photo-3.jpg">
+                                <img class="gallery_photo" data-lazy="public/img/gallery_photo-3.jpg">
                             </div>
                         </div>
                     </div>
@@ -104,7 +103,7 @@
                     <div class="article_slick">
                         <div class="article_page_view">
                             <div class="article_page_view_content">
-                                <img class="article_page_image" src="public/img/article_photo-1.jpg">
+                                <img class="article_page_image" data-lazy="public/img/article_photo-1.jpg">
                                 <div class="detail">
                                     <p class="detail_title">
                                         Caribbean dreams in Grand Cayman
@@ -120,7 +119,7 @@
                         </div>
                         <div class="article_page_view">
                             <div class="article_page_view_content">
-                                <img class="article_page_image" src="public/img/article_photo-2.jpg">
+                                <img class="article_page_image" data-lazy="public/img/article_photo-2.jpg">
                                 <div class="detail">
                                     <p class="detail_title">
                                         Caribbean dreams in Costa Rica
@@ -136,7 +135,7 @@
                         </div>
                         <div class="article_page_view">
                             <div class="article_page_view_content">
-                                <img class="article_page_image" src="public/img/article_photo-3.jpg">
+                                <img class="article_page_image" data-lazy="public/img/article_photo-3.jpg">
                                 <div class="detail">
                                     <p class="detail_title">
                                         Caribbean dreams in St. Martin
