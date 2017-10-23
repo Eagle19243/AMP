@@ -32,12 +32,28 @@
         <div class="parent_slick">
             <div class="video_view">
                 <div class="video_view_content">
-                    <div id="video_play" class="play-icon" role="button" tabindex="0">
+                    <div class="video_slick">
+                        <div class="movie_view">
+                            <div class="movie_view_content">
+                                <div id="video_play_1" class="play-icon" role="button" tabindex="0">
+                                </div>
+                                <video id="intro_1" class="intro_video" poster="public/img/video_poster_1.jpg" playsinline>
+                                    <source src="public/vids/video_1.mp4" type="video/mp4">
+                                    <source src="public/vids/video_1.webm" type="video/webm">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="movie_view">
+                            <div class="movie_view_content">
+                                <div id="video_play_2" class="play-icon" role="button" tabindex="0">
+                                </div>
+                                <video id="intro_2" class="intro_video" poster="public/img/video_poster_2.jpg" playsinline>
+                                    <source src="public/vids/video_2.mp4" type="video/mp4">
+                                    <source src="public/vids/video_2.webm" type="video/webm">
+                                </video>
+                            </div>
+                        </div>
                     </div>
-                    <video id="intro" class="intro_video" poster="public/img/video_poster.jpg" playsinline>
-                        <source id="video_source_mp4" src="public/vids/video_1.mp4" type="video/mp4">
-                        <source id="video_source_webm" src="public/vids/video_1.webm" type="video/webm">
-                    </video>
                 </div>
             </div>
             <div class="gallery_view">

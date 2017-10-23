@@ -1,15 +1,16 @@
 $(document).ready(function(){
-    var vid = document.getElementById("intro");
-    var vid_source_mp4 = document.getElementById("video_source_mp4");
-    var vid_source_webm = document.getElementById("video_source_webm");
+    var vid_1 = document.getElementById("intro_1");
+    var vid_2 = document.getElementById("intro_2");
     var iframes = $('iframe');
     var isChatFirstLoad = true;
 
-    vid.onended = function(){
-        $("#video_play").show();
-        vid_source_mp4.setAttribute('src', 'public/vids/video_2.mp4');
-        vid_source_webm.setAttribute('src', 'public/vids/video_2.webm');
-        vid.load();
+    vid_1.onended = function(){
+        $("#video_play_1").show();
+        vid_1.load();
+    }
+    vid_2.onended = function(){
+        $("#video_play_2").show();
+        vid_2.load();
     }
     iframes.each(function() {
         var src = $(this).attr('src');
@@ -29,9 +30,13 @@ $(document).ready(function(){
         $('.chatscreen').css('left', '100%');
         $('.chatscreen').css('right', '-100%');
     });
-    $('#video_play').click(function(){
-        $("#video_play").hide();
-        vid.play();
+    $('#video_play_1').click(function(){
+        $("#video_play_1").hide();
+        vid_1.play();
+    });
+    $('#video_play_2').click(function(){
+        $("#video_play_2").hide();
+        vid_2.play();
     });
     $('#article_1').click(function(){
         $('.parent_slick').slick('slickNext');
@@ -47,6 +52,12 @@ $(document).ready(function(){
     });
     $('.parent_slick').slick({
         infinite: false
+    });
+    $('.video_slick').slick({
+        infinite: false,
+        vertical: true,
+        verticalSwiping: true,
+        lazyLoad: 'ondemand'
     });
     $('.gallery_slick').slick({
         vertical: true,
@@ -67,6 +78,9 @@ $(window).resize(function() {
 
 function setPhotoHeight () {
     windowHeight = $(window).innerHeight();
+    $('.intro_video').css('height', windowHeight);
     $('.gallery_photo').css('height', windowHeight);
     $('.article_page_image').css('height', windowHeight);
+    $('#video_play_1').css('top', '25%');
+    $('#video_play_2').css('top', '75%');
 }
