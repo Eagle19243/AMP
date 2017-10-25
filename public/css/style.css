@@ -25,6 +25,8 @@ html, body {
 }
 .learn_more {
     color: white;
+    font-family: arial;
+    font-size: 14px;
 }
 .left_panel {
     display: table-cell;

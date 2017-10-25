@@ -1,7 +1,6 @@
 $(document).ready(function(){
     var vid_1 = document.getElementById("intro_1");
     var vid_2 = document.getElementById("intro_2");
-    var iframes = $('iframe');
     var isChatFirstLoad = true;
 
     vid_1.onended = function(){
@@ -12,15 +11,14 @@ $(document).ready(function(){
         $("#video_play_2").show();
         vid_2.load();
     }
-    iframes.each(function() {
-        var src = $(this).attr('src');
-        $(this).data('src', src).attr('src', '');
-    });
+    var chat_iframe = $("#chatbox_iframe");
+    var src = 'https://chat-interface.herokuapp.com/?theme=bridgestone&channelID=76a21dc9-256e-4bc7-a911-1906360178df&text=start_contobox_new&theme_ext=' + document.location.origin + '/public/css/chatbox.css';
+    chat_iframe.data('src', src).attr('src', '');
     $('#chat').click(function(){
         $('.chatscreen').css('left', 0);
         $('.chatscreen').css('right', 0);
         if (isChatFirstLoad) {
-            iframes.attr('src', function() {
+            chat_iframe.attr('src', function() {
                 return $(this).data('src');
             });
             isChatFirstLoad = false;
@@ -68,6 +66,22 @@ $(document).ready(function(){
         vertical: true,
         verticalSwiping: true,
         lazyLoad: 'ondemand'
+    });
+    $('.video_slick').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        if (currentSlide == 0) {
+            vid_1.pause();
+            $("#video_play_1").show();
+        }
+        else if (currentSlide == 1) {
+            vid_2.pause();
+            $("#video_play_2").show();
+        }
+    });
+    $('.parent_slick').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        if (currentSlide == 0) {
+            vid_1.pause();
+            $("#video_play_1").show();
+        }
     });
     setPhotoHeight();
 });
