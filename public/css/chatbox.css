@@ -33,11 +33,11 @@
 }
 
 .MessageGroup-avatarColumn {
-    display: none;
+    display: none !important;
 }
 
 .MessageGroup-messagesColumn {
-    margin-left: 0px;
+    margin-left: 0px !important;
 }
 
 .hdvc-wrap.hdvc-full-image {
