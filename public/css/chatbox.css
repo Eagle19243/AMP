@@ -32,6 +32,14 @@
     background-color: #1111ff;
 }
 
+.MessageGroup-avatarColumn {
+    display: none;
+}
+
+.MessageGroup-messagesColumn {
+    margin-left: 0px;
+}
+
 .hdvc-wrap.hdvc-full-image {
     max-width: 80%;
     display: block;
